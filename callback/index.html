@@ -1,0 +1,5 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tesla callback</title>
+<style>body{font-family:sans-serif;padding:2em}code{display:block;word-break:break-all;background:#eee;padding:1em;font-size:1.1em}</style></head>
+<body><h1>Tesla 인증 완료</h1><p>Code:</p><code id="code">-</code><p>State:</p><code id="state">-</code><p id="err"></p>
+<script>var p=new URLSearchParams(location.search);document.getElementById('code').textContent=p.get('code')||'(none)';document.getElementById('state').textContent=p.get('state')||'(none)';if(p.get('error'))document.getElementById('err').textContent='Error: '+p.get('error')+' '+(p.get('error_description')||'');</script>
+</body></html>
